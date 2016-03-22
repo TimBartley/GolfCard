@@ -1,0 +1,116 @@
+﻿@model GolfCardReader.Models.Card
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Card</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PlayerName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PlayerName)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Score1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Score1)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Score2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Score2)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Score3)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Score3)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Score4)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Score4)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Score5)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Score5)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Score6)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Score6)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Score7)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Score7)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Score8)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Score8)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Score9)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Score9)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.teeOff)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.teeOff)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
